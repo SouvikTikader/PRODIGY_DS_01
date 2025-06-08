@@ -2,8 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load datasets
-df = pd.read_csv("API_SP.POP.TOTL_DS2_en_csv_v2_2590.csv", skiprows=4)
-meta = pd.read_csv("Metadata_Country_API_SP.POP.TOTL_DS2_en_csv_v2_2590.csv")
+df = pd.read_csv("dataset/API_SP.POP.TOTL_DS2_en_csv_v2_2590.csv", skiprows=4)
+meta = pd.read_csv("dataset/Metadata_Country_API_SP.POP.TOTL_DS2_en_csv_v2_2590.csv")
 
 # Merge on Country Code
 merged_df = df.merge(meta, on="Country Code")
