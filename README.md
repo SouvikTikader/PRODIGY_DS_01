@@ -57,13 +57,13 @@ pip install pandas matplotlib
 
 ```bash
 python population_visualization.py
+python population_by_region_income.py
 ```
 
 The script will:
 
 * Read the population and metadata CSV files
-* Generate and display 4 visualizations
-* Save them in the `image/` folder (created if it doesn't exist)
+* Generate and display 4 visualizations 
 
 ---
 
