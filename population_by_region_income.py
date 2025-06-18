@@ -17,7 +17,7 @@ merged = merged_df[["Country Name", "Region", "IncomeGroup", year]].dropna()
 # Convert population to millions for readability
 merged[year] = merged[year] / 1_000_000
 
-# --- 1. Bar Chart: Average Population by Region ---
+# 1. Bar Chart: Average Population by Region
 region_avg = merged.groupby("Region")[year].mean().sort_values(ascending=False)
 
 plt.figure(figsize=(10, 6))
@@ -29,7 +29,7 @@ plt.tight_layout()
 plt.savefig("avg_population_by_region.png")
 plt.show()
 
-# --- 2. Bar Chart: Average Population by Income Group ---
+# 2. Bar Chart: Average Population by Income Group
 income_avg = merged.groupby("IncomeGroup")[year].mean().sort_values(ascending=False)
 
 plt.figure(figsize=(8, 5))
