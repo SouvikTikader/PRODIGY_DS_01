@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Loading dataset
-df = pd.read_csv("API_SP.POP.TOTL_DS2_en_csv_v2_2590.csv", skiprows=4)
+df = pd.read_csv("Dataset/API_SP.POP.TOTL_DS2_en_csv_v2_2590.csv", skiprows=4)
 
 # Selecting year
 year = "2023"
